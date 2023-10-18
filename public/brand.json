@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "image": "https://i.ibb.co/vwc4Fqx/1brand.jpg",
+        "name": "Coca-Cola"
+        
+    },
+    {
+        "_id": 2,
+        "image": "https://i.ibb.co/d7wdQwd/pex.webp",
+        "name": "About KFC"
+        
+    },
+    {
+        "_id": 3,
+        "image": "https://i.ibb.co/Qb4j6C9/brand5.jpg",
+        "name": "PepsiCo's "
+        
+    },
+    {
+        "_id": 4,
+        "image": "https://i.ibb.co/GxX7XXT/glend.webp",
+        "name": "Nestlé"
+       
+    },
+    {
+        "_id": 5,
+        "image": "https://i.ibb.co/7vfDkXG/cere.jpg",
+        "name": "Visit WK Kellogg "
+        
+    },
+    {
+        "_id": 6,
+        "image": "https://i.ibb.co/pzTzGSH/wer.jpg",
+        "name": "McDonalds"
+        
+    }
+]
