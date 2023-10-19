@@ -70,7 +70,7 @@ const Login = () => {
                 })
 
             .catch(error => {
-                toast.error(error)
+                toast.error(error.message)
             })
 
     }

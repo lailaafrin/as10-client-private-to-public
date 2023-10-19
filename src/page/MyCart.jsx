@@ -1,82 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import DeletAdd from '../components/DeletAdd';
+
+
 
 
 const MyCart = () => {
-    const brands = useLoaderData();
+    const  loadedCard = useLoaderData();
+    const [ updateCards, setUpdateCards ] = useState(loadedCard);
+    // console.log(cards)
     return (
         <div className=''>
-            
-            
-            <div className="overflow-mx-auto">
-                <table className="table">
+            <div className="overflow-x-auto ml-16 mt-12">
+                <table className="table table-zebra">
                     {/* head */}
                     <thead>
-                        <tr>
-                            
-                            <th></th>
-                            
-                            <th>photo</th>
+                        <tr className='text-orange-500  font-bold text-2xl'>
+                            <th>Photo</th>
                             <th>Name</th>
-                            <th>brandname</th>
-                            <th>category</th>
-                            <th>price</th>
-                            <th>Ratting</th>
+                            <th>Brand_Name</th>
+                            <th>Ceategory</th>
+                            <th>Price</th>
+                            <th>Rating</th>
                             <th>Details</th>
-                            <th>ADD Cart</th>
+                            <th>Edit</th>
                             <th>DELETE</th>
-                            <th></th>
-                            
-                            
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        {
-                            brands?.map(brand =>
-                                <tr key={brand._id}>
-                                    <td></td>
-                                    <td>
-                                        <div className="flex items-center space-x-3">
-                                            <div className="avatar">
-                                                <div className="mask mask-squircle w-12 h-12">
-                                                    <img src={brand.photo} />
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </td>
-                                    <td>
-                                        {brand.name}
-                                        <br />
-                                        <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                                    </td>
-                                    <td>Purple</td>
-                                    <td>{ brand.category}</td>
-                                     <td>{ brand.price}</td>
-                                    <td>{brand.rating}</td>
-                                    <td>{brand.description}</td>
-                                    
-                                    
-                                    <th>
-                                        <button className="btn btn-ghost btn-xs">add cart</button>
-                                    </th>
-                                    <th>
-                                        <button className="btn btn-ghost btn-xs">Delete</button>
-                                    </th>
-                                </tr>
-                                )
-                        }
-                       
-                       
-                    
-                      
-                    </tbody>
-                    
-                    
-
+                        </tbody>
                 </table>
             </div>
+
+            {
+                            updateCards?.map(card => <DeletAdd
+                                key={card._id}
+                                card={card}
+                                updateCards={updateCards}
+                                setUpdateCards={setUpdateCards}
+                            ></DeletAdd>)
+                        }
+                       
+                     
+        
         </div>
     );
 };

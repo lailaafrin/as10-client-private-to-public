@@ -12,6 +12,7 @@ import Register from "../page/Register";
 import Product1 from "../sheard/Product1";
 import Privaterout from "./Privaterout";
 import ErrorPages from "../components/ErrorPages";
+import UpdatedProduct from "../components/UpdatedProduct";
 
 
 
@@ -21,7 +22,7 @@ const myRouts = createBrowserRouter([
     {
         path: "/",
         element: <MainLayouts></MainLayouts>,
-        
+
         children: [
             {
                 path: '/',
@@ -35,9 +36,14 @@ const myRouts = createBrowserRouter([
             {
                 path: '/mycart',
                 element: <MyCart></MyCart>,
-                loader: () => fetch('http://localhost:5000/brand')
+                loader: () => fetch('https://momgo-as10-server-emgxrm3x7-lailaafrin.vercel.app/brand')
             },
-            
+            {
+                path: '/updateproduct/:id',
+                element: <UpdatedProduct></UpdatedProduct>,
+                loader: ({ params }) => fetch(`https://momgo-as10-server-k8s9ip1nx-lailaafrin.vercel.app/brand/${ params.id }`)
+            },
+
             {
                 path: '/product1',
                 element: <Product1></Product1>
@@ -54,9 +60,9 @@ const myRouts = createBrowserRouter([
     },
     {
         path: '/error',
-        element:<ErrorPages></ErrorPages>
+        element: <ErrorPages></ErrorPages>
     }
-    
+
 ]);
 
 export default myRouts;
