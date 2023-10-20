@@ -13,14 +13,14 @@ const AddProduct = () => {
         const rating = form.rating.value;
         const category = form.category.value;
         const description = form.description.value;
-        const photo = form.photo.value;
+        const image = form.image.value;
 
-        const newProduct = { name, price, brand, rating, category, description, photo }
+        const newProduct = { name, price, brand, rating, category, description, image }
 
         console.log(newProduct);
 
 
-        fetch('https://momgo-as10-server-emgxrm3x7-lailaafrin.vercel.app/brand', {
+        fetch('https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -110,7 +110,7 @@ const AddProduct = () => {
                             <span className="label-text">Photo URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" />
+                            <input type="text" name="image" placeholder="Photo URL" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

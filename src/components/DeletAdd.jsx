@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const DeletAdd = ({ card, updateCards, setUpdateCards }) => {
-    const { _id, name, price, brand, rating, category, description, photo } = card || {};
+    const { _id, name, price, brand, rating, category, description, image } = card || {};
     
     const handleDelete = _id => {
         console.log(_id)
@@ -21,7 +21,7 @@ const DeletAdd = ({ card, updateCards, setUpdateCards }) => {
             if (result.isConfirmed) {
                 
 
-                fetch(`https://momgo-as10-server-k8s9ip1nx-lailaafrin.vercel.app/brand/${ _id }`, {
+                fetch(`https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand/${ _id }`, {
                     method:"DELETE"
                 })
                     .then(res => res.json())
@@ -55,7 +55,7 @@ const DeletAdd = ({ card, updateCards, setUpdateCards }) => {
                                         <div className="flex items-center space-x-3">
                                             <div className="avatar">
                                                 <div className="mask mask-squircle w-12 h-12">
-                                                    <img src={photo} />
+                                                    <img src={image} />
                                                 </div>
                                             </div>
 

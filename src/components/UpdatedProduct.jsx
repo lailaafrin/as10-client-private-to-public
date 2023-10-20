@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 const UpdatedProduct = () => {
 
     const product = useLoaderData();
-    const { _id, name, price, brand, rating, category, description, photo } = product;
+    const { _id, name, price, brand, rating, category, description, image } = product;
 
 
     const handleUpdate = (e) => {
@@ -19,9 +19,9 @@ const UpdatedProduct = () => {
         const rating = form.rating.value;
         const category = form.category.value;
         const description = form.description.value;
-        const photo = form.photo.value;
+        const image = form.image.value;
 
-        const updateProduct = { name, price, brand, rating, category, description, photo }
+        const updateProduct = { name, price, brand, rating, category, description, image }
 
         console.log(updateProduct);
 
@@ -112,14 +112,14 @@ const UpdatedProduct = () => {
                         </label>
                     </div>
                 </div>
-                {/* form Photo URL row */}
+                {/* form image URL row */}
                 <div className="mb-8">
                     <div className="form-control w-full">
                         <label className="label">
-                            <span className="label-text">Photo URL</span>
+                            <span className="label-text">image URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="photo" defaultValue={photo} placeholder="Photo URL" className="input input-bordered w-full" />
+                            <input type="text" name="image" defaultValue={image} placeholder="image URL" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

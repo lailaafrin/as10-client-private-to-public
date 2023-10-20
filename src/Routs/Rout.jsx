@@ -22,12 +22,12 @@ const myRouts = createBrowserRouter([
     {
         path: "/",
         element: <MainLayouts></MainLayouts>,
-
+        errorElement:<ErrorPages></ErrorPages>,
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('/brand.json')
+                
             },
             {
                 path: '/addproduct',
@@ -36,17 +36,18 @@ const myRouts = createBrowserRouter([
             {
                 path: '/mycart',
                 element: <MyCart></MyCart>,
-                loader: () => fetch('https://momgo-as10-server-emgxrm3x7-lailaafrin.vercel.app/brand')
+                loader: () => fetch('https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand')
             },
             {
                 path: '/updateproduct/:id',
                 element: <UpdatedProduct></UpdatedProduct>,
-                loader: ({ params }) => fetch(`https://momgo-as10-server-k8s9ip1nx-lailaafrin.vercel.app/brand/${ params.id }`)
+                loader: ({ params }) => fetch(`https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand/${ params.id }`)
             },
 
             {
-                path: '/product1',
-                element: <Product1></Product1>
+                path: '/brand/:id',
+                element: <Product1></Product1>,
+                loader: ({ params }) => fetch(`https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand'${ params.id}`)
             },
             {
                 path: '/login',

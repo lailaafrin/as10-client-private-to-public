@@ -16,7 +16,7 @@ const MyCart = () => {
                     {/* head */}
                     <thead>
                         <tr className='text-orange-500  font-bold text-2xl'>
-                            <th>Photo</th>
+                            <th>image</th>
                             <th>Name</th>
                             <th>Brand_Name</th>
                             <th>Ceategory</th>
