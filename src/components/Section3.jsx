@@ -3,9 +3,9 @@ import React from 'react';
 const Section3 = () => {
     return (
         <div>
-            <h2 className='text-3xl font-bold text-orange-400 divider text-center '>Texture refers to those qualities of a food</h2>
+            <h2 className='text-3xl font-bold text-orange-400 divider text-center '>Texture refers to those qualities of a  quality</h2>
             <div className="card card-side bg-base-100 shadow-xl mx-6">
-                <h2 className="card-title p-5 text-orange-300">What is food texture? Food texture is defined as those properties of a food that are sensed by touch in the
+                <h2 className="card-title p-5 text-orange-300">What is food texture? Food texture is defined as those properties of a food that are sensed by nat food in the
                 </h2>
                 <figure><img src="https://i.ibb.co/7rgpR4Q/105174449-Untitled-1.webp" alt="Movie" /></figure>
                 <div className="card-body">
