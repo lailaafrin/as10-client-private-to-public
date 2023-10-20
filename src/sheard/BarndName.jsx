@@ -7,7 +7,7 @@ const BarndName = ({card}) => {
     
     return (
         <>
-            <Link to={`/brand/${_id }`}>
+            <Link to={`/brand/${brand}`}>
                 
         
 

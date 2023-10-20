@@ -42,8 +42,9 @@ const AddProduct = () => {
     }
 
     return (
-        <div className="bg-[#F4F3F0] p-24 mx-52">
-            <h2 className="text-3xl font-extrabold">Add a Products</h2>
+        <div className="bg-orange-200 mt-8 p-24 mx-52">
+            <h2 className="text-3xl font-extrabold text-center text-orange-400 ">Add a Products</h2>
+            <hr />
             <form onSubmit={handleAddProduct}>
                 {/* form name and price row */}
                 <div className="md:flex mb-8">

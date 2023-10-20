@@ -35,7 +35,7 @@ const myRouts = createBrowserRouter([
             },
             {
                 path: '/mycart',
-                element: <MyCart></MyCart>,
+                element: <Privaterout><MyCart></MyCart></Privaterout>,
                 loader: () => fetch('https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand')
             },
             {

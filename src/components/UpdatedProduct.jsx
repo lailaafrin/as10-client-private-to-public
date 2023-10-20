@@ -51,7 +51,7 @@ const UpdatedProduct = () => {
     };
 
     return (
-        <div className="bg-[#F4F3F0] p-24 mx-52">
+        <div className="bg-orange-200 mt-8 p-24 mx-52">
             <h2 className="text-3xl font-extrabold text-center text-orange-500">Update a Product</h2>
             <form onSubmit={handleUpdate}>
                 {/* form name and price row */}
