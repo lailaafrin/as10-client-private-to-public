@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({card}) => {
 console.log(card)
@@ -12,9 +13,23 @@ console.log(card)
                     <p>{category} </p>
                     <p>price:${price} </p>
                     <p>{rating} </p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Update Product</button>
-                    </div>
+                <div className='flex'>
+                    <Link to='/addproduct'>
+
+                        <div className="card-actions  justify-center">
+                            <button className="btn bg-gray-700 text-white">Add Product</button>
+                        </div>
+                    </Link>
+                    
+                    
+                    <Link to='/mycart'>
+                        <div className="card-actions  justify-center">
+                            <button className="btn bg-orange-300">Update Product</button>
+
+                        </div>
+                    </Link>
+                    
+                   </div>
                 </div>
             </div>
         

@@ -4,6 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import { useEffect, useState, } from "react";
 import { useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
+import Marquee from "react-fast-marquee";
+
 
 const Product1 = () => {
     const products = useParams();
@@ -14,7 +16,7 @@ const Product1 = () => {
         fetch('https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                setCards(data.slice(0,4))
 
                 const filtered = data.filter(a => a.brand == products.id)
                 setCards(filtered)
@@ -31,21 +33,44 @@ const Product1 = () => {
     return (
 
         <div className=' '>
-            <Carousel className=' text-center'>
 
-                <img className="" src="https://i.ibb.co/GtjMrZ8/Photography-PRL-Image-6-1.webp" />
-
-
-                <img src="https://i.ibb.co/yV84Qby/brand5.jpg" />
+            
+               
+            
+            {/* <Carousel className=' text-center'>
+                
+                    <img className="" src="https://i.ibb.co/
+                    GtjMrZ8/Photography-PRL-Image-6-1.webp" />
+                
+               
+            <img src="https://i.ibb.co/yV84Qby/brand5.jpg" />
+               
 
 
 
                 <img src="https://i.ibb.co/mD87Zxv/brand3.jpg" />
 
-            </Carousel>
+            </Carousel> */}
 
+            <Marquee className="mt-12">
+                {/* <h1 className="">FOOD TEXTURE AND SWALLOWING PROBLEMS</h1> */}
 
-            <div className="grid grid-cols-2 mx-52 gap-8 ">
+                <img className="h-24" src="https://i.ibb.co/
+                    GtjMrZ8/Photography-PRL-Image-6-1.webp" />
+                <h1 className="text-7xl text-orange-600 font-bold">REFERENCES
+
+                </h1>
+                <img className="h-24" src="https://i.ibb.co/mD87Zxv/brand3.jpg" />
+                <h1 className="text-7xl text-orange-600 font-bold">PRESENTATION</h1>
+                <img className="h-24 w-full" src="https://i.ibb.co/yV84Qby/brand5.jpg" />
+                <h1 className="text-7xl text-orange-600 font-bold">TASTE
+</h1>
+                
+
+               
+            </Marquee>
+
+            <div className="grid grid-cols-2 mx-52 gap-8 mt-12">
 
 
                 {
