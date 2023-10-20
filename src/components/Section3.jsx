@@ -10,9 +10,9 @@ const Section3 = () => {
                 <figure><img src="https://i.ibb.co/7rgpR4Q/105174449-Untitled-1.webp" alt="Movie" /></figure>
                 <div className="card-body">
                     
-                    <p className='p-5 text-orange-300'>mouth and with the hands. We use many words to describe food texture—foods can be soft or hard, mushy or crunchy, or smooth or lumpy. Texture is important to the enjoyment and acceptability of foods.</p>
+                    <p className='p-5 text-orange-300'>mouth and with the hands. We use many words to describe food texture—foods can be soft or hard, mushy or crunchy, or smooth or lumpy. Texture is important is heaer the enjoyment and acceptability of foods.</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-outline w-40 text-red-400">Watch</button>
+                        <button className="btn btn-outline w-40 text-red-400">order now</button>
                     </div>
                 </div>
             </div>  
