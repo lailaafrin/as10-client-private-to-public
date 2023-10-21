@@ -7,10 +7,10 @@ console.log(card)
     return (
         
             <div className="card bg-base-100 shadow-xl">
-                <figure><img src={image} /></figure>
+                <figure><img className='h-96' src={image} /></figure>
                 <div className="card-body">
-                <h2 className="card-title">Brand Name{brand}</h2>
-                    <p>{category} </p>
+                <h2 className="card-title">Brand Name:{brand}</h2>
+                    <p>CategoryName:{category} </p>
                     <p>price:${price} </p>
                     <p>{rating} </p>
                 <div className='flex'>

@@ -22,8 +22,7 @@ const MyCart = () => {
                             <th>Ceategory</th>
                             <th>Price</th>
                             <th>Rating</th>
-                            <th>Details</th>
-                            <th>Edit</th>
+                             <th>Edit</th>
                             <th>DELETE</th>
                         </tr>
                     </thead>

@@ -11,7 +11,7 @@ const BarndName = ({card}) => {
                 
         
 
-                <div className="card card-compact w-96 h-96 bg-base-100 shadow-xl mx-auto">
+                <div className="card card-compact w-96 h-96 hover:bg-base-100 shadow-xl mx-auto ">
                     
                     <figure><img src={image}className='h-96' alt="" /></figure>
                     <div className="card-body">

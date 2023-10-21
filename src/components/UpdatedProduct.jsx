@@ -26,7 +26,7 @@ const UpdatedProduct = () => {
         console.log(updateProduct);
 
 
-        fetch(`https://momgo-as10-server-k8s9ip1nx-lailaafrin.vercel.app/brand/${ _id }`, {
+        fetch(`https://momgo-as10-server-e8vflbg5k-lailaafrin.vercel.app/brand/${ _id }`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

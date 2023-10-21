@@ -70,7 +70,7 @@ const DeletAdd = ({ card, updateCards, setUpdateCards }) => {
                                     <td>{category}</td>
                                     <td>{price}</td>
                                     <td>{rating}</td>
-                                    <td>{description}</td>
+                                    
 
 
                                     <th>

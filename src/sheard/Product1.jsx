@@ -70,7 +70,7 @@ const Product1 = () => {
                
             </Marquee>
 
-            <div className="grid grid-cols-2 mx-52 gap-8 mt-12">
+            <div className="grid lg:grid-cols-2 sm:mx-24 lg:mx-52 gap-8 mt-12">
 
 
                 {

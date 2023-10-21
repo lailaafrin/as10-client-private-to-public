@@ -2,29 +2,29 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 mt-12 bg-base-200 text-base-content grid-cols-2 ">
-            <nav className='sm:ml-12'>
-                <header className="footer-title">Services</header>
+        <footer className="footer p-10 mt-12 bg-base-200  grid-cols-2 ">
+            <nav className='sm:ml-12 '>
+                <header className="footer-title text-orange-700">Services</header>
                 <a className="link link-hover">Branding</a>
                 <a className="link link-hover">Design</a>
                 <a className="link link-hover">Marketing</a>
                 <a className="link link-hover">Advertisement</a>
             </nav>
             <nav className='sm:ml-12'>
-                <header className="footer-title">Company</header>
+                <header className="footer-title text-orange-600">Company</header>
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">Jobs</a>
                 <a className="link link-hover">Press kit</a>
             </nav>
             <nav className='sm:ml-12'>
-                <header className="footer-title">Legal</header>
+                <header className="footer-title text-orange-600">Legal</header>
                 <a className="link link-hover">Terms of use</a>
                 <a className="link link-hover">Privacy policy</a>
                 <a className="link link-hover">Cookie policy</a>
             </nav>
             <form>
-                <header className="footer-title">Newsletter</header>
+                <header className="footer-title text-orange-700">Newsletter</header>
                 <fieldset className="form-control w-80">
                     <label className="label">
                         <span className="label-text">Enter your email address</span>
