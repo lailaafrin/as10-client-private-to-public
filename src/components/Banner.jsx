@@ -25,7 +25,7 @@ const Banner = () => {
                     <p className="py-6">This introductory textbook provides a thorough guide to the management of food and beverage outlets, from their day-to-day running through to the wider concerns of the hospitality industry.</p>
                     <button
                         onClick={toggleMode}    
-                        className="btn btn-outline ml-52">Toogle moode</button>
+                        className="btn btn-outline  ml-52">Toogle moode</button>
                 </div>
             </div>
         </div>
